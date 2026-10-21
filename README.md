@@ -15,4 +15,8 @@ Read the [AI Model Fit Finder privacy notice](https://essamamdani.com/privacy/ai
 
 The web finder is at [essamamdani.com/ai-models/hardware-fit](https://essamamdani.com/ai-models/hardware-fit); the searchable catalog is at [essamamdani.com/ai-models](https://essamamdani.com/ai-models).
 
+## Download v1.0.0
+
+Get the [packaged extension ZIP](https://github.com/essamamdani/ai-model-fit-finder/releases/download/v1.0.0/ai-model-fit-finder.zip) or read the [release notes](https://github.com/essamamdani/ai-model-fit-finder/releases/tag/v1.0.0). Extract the ZIP, then follow the local installation steps above.
+
 This source build is not yet published in the Chrome Web Store. Store review and listing assets are still required before public store distribution.
