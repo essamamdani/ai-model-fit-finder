@@ -4,6 +4,14 @@
   "version": "1.0.0",
   "description": "Find AI models for your task with Essa Mamdani's model directory.",
   "homepage_url": "https://essamamdani.com/ai-models/hardware-fit",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "host_permissions": [
+    "https://essamamdani.com/*"
+  ],
   "action": {
     "default_title": "Find an AI model",
     "default_popup": "popup.html"

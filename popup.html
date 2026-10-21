@@ -14,9 +14,11 @@
       <form id="finder-form">
         <label for="need">What do you need?</label>
         <textarea id="need" name="need" maxlength="500" minlength="3" required placeholder="A tool-calling coding model for a 16 GB Mac…"></textarea>
-        <button type="submit">Continue to model finder <span aria-hidden="true">↗</span></button>
+        <button id="search-button" type="submit">Find models <span aria-hidden="true">→</span></button>
       </form>
-      <p class="privacy">Your search opens on essamamdani.com. Don’t enter passwords, private keys, or sensitive text.</p>
+      <p id="search-status" class="status" role="status" aria-live="polite"></p>
+      <section id="results" class="results" aria-label="Recommended models" hidden></section>
+      <p class="privacy">Your search is sent to essamamdani.com for recommendations. Don’t enter passwords, private keys, or sensitive text. <a href="https://essamamdani.com/privacy/ai-model-fit-finder" target="_blank" rel="noreferrer">Privacy details</a></p>
       <a class="directory-link" href="https://essamamdani.com/ai-models" target="_blank" rel="noreferrer">Browse the full model directory →</a>
     </main>
     <script type="module" src="popup.js"></script>

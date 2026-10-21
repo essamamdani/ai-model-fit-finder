@@ -6,8 +6,8 @@
 }
 
 * { box-sizing: border-box; }
-body { width: 360px; margin: 0; background: radial-gradient(ellipse at 50% -20%, #073414, transparent 60%), #050806; }
-main { padding: 22px; }
+body { width: 400px; max-height: 620px; overflow: auto; margin: 0; background: radial-gradient(ellipse at 50% -20%, #073414, transparent 60%), #050806; }
+main { padding: 20px; }
 .eyebrow { margin: 0 0 12px; color: #00ff41; font: 700 10px/1.4 ui-monospace, monospace; letter-spacing: .13em; }
 h1 { margin: 0; font-size: 25px; line-height: 1.12; letter-spacing: -.04em; }
 .intro { margin: 10px 0 20px; color: #b2bbb4; font-size: 13px; line-height: 1.55; }
@@ -17,6 +17,18 @@ textarea:focus { border-color: #00ff41; box-shadow: 0 0 0 2px #00ff4122; }
 textarea::placeholder { color: #778079; }
 button { display: flex; width: 100%; min-height: 43px; align-items: center; justify-content: center; gap: 8px; margin-top: 12px; border: 0; border-radius: 10px; background: #00e83b; color: #001706; font: 700 13px/1 ui-sans-serif, system-ui, sans-serif; cursor: pointer; }
 button:hover { background: #39ff6b; }
+button:disabled { cursor: wait; opacity: .65; }
+.status { min-height: 17px; margin: 12px 0 0; color: #aebbb1; font-size: 11px; line-height: 1.5; }
+.status:empty { display: none; }
+.status.error { color: #ff9f9f; }
+.results { display: grid; gap: 8px; max-height: 290px; overflow: auto; margin-top: 10px; }
+.results h2 { margin: 2px 0; font-size: 14px; }
+.model-card { border: 1px solid #26372b; border-radius: 10px; padding: 10px; background: #080d09; }
+.model-card h3 { margin: 0; color: #f4f7f4; font-size: 13px; }
+.model-card p, .empty { margin: 5px 0 8px; color: #aebbb1; font-size: 11px; line-height: 1.45; }
+.model-card a, .full-finder { color: #68f58a; font-size: 11px; text-decoration: none; }
+.model-card a:hover, .full-finder:hover { text-decoration: underline; }
+.full-finder { padding: 4px 2px; }
 .privacy { margin: 12px 0 15px; color: #8f9991; font-size: 10px; line-height: 1.5; }
 .directory-link { color: #68f58a; font-size: 11px; text-decoration: none; }
 .directory-link:hover { color: #a3ffb5; text-decoration: underline; }

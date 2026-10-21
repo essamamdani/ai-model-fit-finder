@@ -1,15 +1,17 @@
 # AI Model Fit Finder
 
-A small, single-purpose Chrome extension that opens Essa Mamdani's AI model finder with your typed requirement prefilled. It does not read the active tab, collect browsing history, or request browser permissions.
+A small Chrome extension that searches Essa Mamdani's AI model directory and shows matching model cards in the popup. It does not read the active tab or browsing history. It requests access only to `https://essamamdani.com/*` so it can call the model-search API.
 
 ## Try it locally
 
 1. Open `chrome://extensions` and enable Developer mode.
 2. Choose **Load unpacked** and select this directory.
-3. Open the extension, describe a model need, and choose **Continue to model finder**.
-4. Review the prefilled request on the site and press **Find models** when ready.
+3. Open the extension, describe a model need, and choose **Find models**.
+4. Review matching models in the popup, or open the full finder for hardware-fit estimates.
 
-The extension passes the text you submit in the destination URL, so it can appear in browser history and site request logs. Search requests are logged by the site as described in its privacy notice. Do not enter passwords, API keys, or other sensitive text.
+When you search, the query is sent to the site's model-search API and logged as described in its privacy notice. The server may send the query to its configured AI provider to classify the request. Do not enter passwords, API keys, or other sensitive text. Only the optional full-finder link places the query in a URL.
+
+Read the [AI Model Fit Finder privacy notice](https://essamamdani.com/privacy/ai-model-fit-finder) before using the extension.
 
 The web finder is at [essamamdani.com/ai-models/hardware-fit](https://essamamdani.com/ai-models/hardware-fit); the searchable catalog is at [essamamdani.com/ai-models](https://essamamdani.com/ai-models).
 
