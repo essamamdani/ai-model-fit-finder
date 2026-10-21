@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "AI Model Fit Finder",
+  "version": "1.0.0",
+  "description": "Find AI models for your task with Essa Mamdani's model directory.",
+  "homepage_url": "https://essamamdani.com/ai-models/hardware-fit",
+  "action": {
+    "default_title": "Find an AI model",
+    "default_popup": "popup.html"
+  }
+}

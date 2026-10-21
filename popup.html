@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI Model Fit Finder</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">ESSA MAMDANI · AI MODEL DIRECTORY</p>
+      <h1>Find a model for the job.</h1>
+      <p class="intro">Describe what you want to build. Add hardware only if you need a local-fit estimate.</p>
+      <form id="finder-form">
+        <label for="need">What do you need?</label>
+        <textarea id="need" name="need" maxlength="500" minlength="3" required placeholder="A tool-calling coding model for a 16 GB Mac…"></textarea>
+        <button type="submit">Continue to model finder <span aria-hidden="true">↗</span></button>
+      </form>
+      <p class="privacy">Your search opens on essamamdani.com. Don’t enter passwords, private keys, or sensitive text.</p>
+      <a class="directory-link" href="https://essamamdani.com/ai-models" target="_blank" rel="noreferrer">Browse the full model directory →</a>
+    </main>
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>
