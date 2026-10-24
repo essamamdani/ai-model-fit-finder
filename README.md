@@ -2,6 +2,10 @@
 
 A small Chromium and Firefox extension that searches Essa Mamdani's AI model directory and shows matching model cards in the popup. It does not read the active tab or browsing history. It requests access only to `https://essamamdani.com/*` so it can call the model-search API. Firefox 140 or later is required so Firefox can disclose and ask for consent to transmit search terms.
 
+![AI Model Fit Finder extension search and sample result](assets/store-preview.png)
+
+The screenshot shows a sample result; recommendations vary with the query and current directory data.
+
 ## Try it locally
 
 1. In Chrome, open `chrome://extensions` and enable Developer mode. In Firefox, open `about:debugging#/runtime/this-firefox`.
