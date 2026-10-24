@@ -1,9 +1,18 @@
 {
   "manifest_version": 3,
   "name": "AI Model Fit Finder",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Find AI models for your task with Essa Mamdani's model directory.",
   "homepage_url": "https://essamamdani.com/ai-models/hardware-fit",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "ai-model-fit-finder@essamamdani.com",
+      "strict_min_version": "140.0",
+      "data_collection_permissions": {
+        "required": ["searchTerms"]
+      }
+    }
+  },
   "icons": {
     "16": "icons/icon-16.png",
     "48": "icons/icon-48.png",
